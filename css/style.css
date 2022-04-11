@@ -113,9 +113,6 @@ a{
 
 /* SITE-FORM */
 
-.site-form {
-
-}
 
 .site-form-container {
   display: flex;
@@ -153,9 +150,6 @@ option[value=""][disabled] {
 
 /* FLAG-CARDS */
 
-.flag-cards {
-
-}
 
 .flag-cards-list {
   margin-left: -75px;
@@ -167,14 +161,17 @@ option[value=""][disabled] {
   margin-left: 75px;
   margin-top: 45px;
   margin-bottom: 30px;
-  width: 260px;
+  max-width: 263px;
+  width: 100%;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   background-color: var(--cards-light-bg-color);
 }
-
+.flag-cards-link{
+  display: block;
+}
 .flag-cards-img{
-  width: 260px;
+  width: 100%;
   height: 160px;
   object-fit: contain;
   border-top-left-radius: 5px;
@@ -189,8 +186,9 @@ option[value=""][disabled] {
 }
 
 .flag-cards-title {
-  margin-top: 24px;
-  margin-bottom: 16px;
+  margin: 0;
+  padding-top: 24px;
+  padding-bottom: 16px;
   font-weight: 800;
   font-size: 18px;
   line-height: 26px;
@@ -207,6 +205,76 @@ option[value=""][disabled] {
 
 .flag-cards-value {
   font-weight: 300;
+}
+
+
+/* MOBILE*/
+
+@media only screen and (max-width: 450px) {
+
+  .container{
+    max-width: 343px;
+  }
+
+  .site-header {
+    margin-bottom: 24px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .site-header-heading {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .dark-mode-toggle {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .dark-mode-toggle-img {
+    width: 16px;
+    height: 16px;
+  }
+
+  /* SITE-FORM */
+
+  .site-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .site-search {
+    width: 100%;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    background-size: 16px 16px;
+    background-position: 32px 16px;
+    margin-bottom: 40px;
+  }
+
+  .region-picker {
+    width: 200px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 24px;
+  }
+
+  /* FLAG-CARDS */
+
+  .flag-cards-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  .flag-cards-item {
+    margin-top: 30px;
+    margin-bottom: 10px;;
+  }
+
 }
 
 /* BACKGROUND-IMAGE FOR RETINA SCREENS */

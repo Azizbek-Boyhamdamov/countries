@@ -39,6 +39,11 @@ img{
   height: auto;
 }
 
+*:focus{
+  outline: 2px dashed var(--cards-dark-bg-color);
+  outline-offset: 3px;
+}
+
 /* CONTAINER */
 .container{
   width: 100%;
@@ -109,6 +114,7 @@ a{
 /* SITE-FORM */
 
 .site-form {
+
 }
 
 .site-form-container {
@@ -145,7 +151,63 @@ option[value=""][disabled] {
   display: none;
 }
 
+/* FLAG-CARDS */
 
+.flag-cards {
+
+}
+
+.flag-cards-list {
+  margin-left: -75px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flag-cards-item {
+  margin-left: 75px;
+  margin-top: 45px;
+  margin-bottom: 30px;
+  width: 260px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: var(--cards-light-bg-color);
+}
+
+.flag-cards-img{
+  width: 260px;
+  height: 160px;
+  object-fit: contain;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.flag-cards-info {
+  padding-left: 24px;
+  padding-right: 0;
+  padding-bottom: 46px;
+  color: var(--main-dark-text-color);
+}
+
+.flag-cards-title {
+  margin-top: 24px;
+  margin-bottom: 16px;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.flag-cards-property {
+  display: inline-block;
+  font-weight: 600;
+}
+
+.flag-cards-property:not(:last-child){
+  margin-bottom: 8px;
+}
+
+.flag-cards-value {
+  font-weight: 300;
+}
 
 /* BACKGROUND-IMAGE FOR RETINA SCREENS */
 @media

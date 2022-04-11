@@ -1,3 +1,13 @@
+/* CUSTOM-PROPS */
+:root{
+  --main-light-text-color:#fff;
+  --main-dark-text-color:#111517;
+  --main-light-bg-color:#F2F2F2;
+  --main-dark-bg-color:#F2F2F2;
+  --cards-light-bg-color:#fff;
+  --cards-dark-bg-color:#2B3844;
+}
+
 /* GLOBAL */
 html{
   box-sizing: border-box;
@@ -17,11 +27,11 @@ body{
   height: 100%;
   padding: 0;
   margin: 0;
-  font-size: 16px;
-  line-height: 1.5;
-  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  font-family: 'Nunito Sans', "Arial", sans-serif;
   background-color: #fff;
-  color: #222;
+  color: var(--main-text-color);
 }
 
 img{
@@ -32,11 +42,24 @@ img{
 /* CONTAINER */
 .container{
   width: 100%;
-  max-width: 1200px;
-  padding-left: 50px;
-  padding-right: 50px;
+  max-width: 1320px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
+}
+
+ul{
+  padding: 0;
+  margin: 0;
+}
+
+li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
 }
 
 /* MAIN-CONTENT */

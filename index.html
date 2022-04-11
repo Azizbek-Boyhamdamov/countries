@@ -16,6 +16,8 @@
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+  <!-- SITE-HEADER -->
+
   <header class="site-header">
     <div class="container">
       <div class="site-header-container">
@@ -25,7 +27,21 @@
     </div>
   </header>
 
+  <!-- FORM -->
 
+<form class="site-form" action="https://echo.htmlacademy.ru" method="get">
+  <div class="site-form-container container">
+    <input class="site-search" type="search" name="search" placeholder="Search for a country…" >
+    <select class="region-picker" name="region">
+      <option value="" disabled selected aria-invalid="false">Filter by Region</option>
+      <option value="">Africa</option>
+      <option value="">America</option>
+      <option value="">Asia</option>
+      <option value="">Europe</option>
+      <option value="">Oceania</option>
+    </select>
+  </div>
+</form>
   <script src="./js/main.js"></script>
 </body>
 </html>

@@ -37,19 +37,22 @@
   <main class="main-content">
     <!-- FORM -->
 
-    <form class="site-form" action="https://echo.htmlacademy.ru" method="get">
-    <div class="site-form-container container">
-      <input class="site-search" type="search" name="search" placeholder="Search for a country…" required aria-label="country-name">
-      <select class="region-picker" name="region" aria-label="regions">
-        <option value="" disabled selected aria-invalid="false">Filter by Region</option>
-        <option value="">Africa</option>
-        <option value="">America</option>
-        <option value="">Asia</option>
-        <option value="">Europe</option>
-        <option value="">Oceania</option>
-      </select>
-    </div>
-    </form>
+    <section>
+      <!-- <h2>Filters</h2> -->
+      <form class="site-form" action="https://echo.htmlacademy.ru" method="get">
+      <div class="site-form-container container">
+        <input class="site-search" type="search" name="search" placeholder="Search for a country…" required aria-label="country-name">
+        <select class="region-picker" name="region" aria-label="regions">
+          <option value="" disabled selected aria-invalid="false">Filter by Region</option>
+          <option value="">Africa</option>
+          <option value="">America</option>
+          <option value="">Asia</option>
+          <option value="">Europe</option>
+          <option value="">Oceania</option>
+        </select>
+      </div>
+      </form>
+    </section>
 
     <!-- CARDS -->
 
@@ -58,113 +61,184 @@
       <ul class="flag-cards-list">
         <li class="flag-cards-item">
           <a href="detail.html" class="flag-cards-link">
-            <img class="flag-cards-img" src="./img/flag-germany.jpg" alt="flag-germany"  srcset="./img/flag-germany.jpg 1x , ./img/flag-germany@2x.jpg 2x" width="260" height="160">
+            <img class="flag-cards-img" src="./img/flag-germany.jpg" alt="flag-germany"  srcset="./img/flag-germany.jpg 1x , ./img/flag-germany@2x.jpg 2x" width="264" height="160">
             <div class="flag-cards-info">
-              <h4 class="flag-cards-title">Germany</h4>
-              <span class="flag-cards-property">Population:</span>
-              <span class="flag-cards-value">81,770,900</span><br>
-              <span class="flag-cards-property">Region: </span>
-              <span class="flag-cards-value">Europe</span><br>
-              <span class="flag-cards-property">Capital:</span>
-              <span class="flag-cards-value">Berlin</span>
+              <h3 class="flag-cards-name">Germany</h3>
+              <dl class="flag-cards-details">
+                <div class="flag-cards-details-item">
+                  <dt class="flag-cards-details-title">Population:</dt>
+                  <dd class="flag-cards-details-value">81,770,900</dd>
+                </div>
+                <div class="flag-cards-details-item">
+                  <dt class="flag-cards-de">Region:</dt>
+                  <dd class="flag-cards-details-value">Europe</dd>
+                </div>
+                <div class="flag-cards-details-item">
+                  <dt class="flag-cards-details-title">Capital:</dt>
+                  <dd class="flag-cards-details-value">Berlin</dd>
+                </div>
+              </dl>
             </div>
           </a>
         </li>
+
         <li class="flag-cards-item">
           <a href="detail.html" class="flag-cards-link">
-            <img class="flag-cards-img" src="./img/flag-United-States-of-America.jpg" alt="flag-United-States-of-America.jpg"  srcset="./img/flag-United-States-of-America.jpg 1x , ./img/flag-United-States-of-America@2x.jpg 2x" width="260" height="160">
+            <img class="flag-cards-img" src="./img/flag-United-States-of-America.jpg" alt="flag-United-States-of-America"  srcset="./img/flag-United-States-of-America.jpg 1x , ./img/flag-United-States-of-America@2x.jpg 2x" width="264" height="160">
             <div class="flag-cards-info">
-              <h4 class="flag-cards-title">United States of America</h4>
-              <span class="flag-cards-property">Population:</span>
-              <span class="flag-cards-value">81,770,900</span><br>
-              <span class="flag-cards-property">Region: </span>
-              <span class="flag-cards-value">Europe</span><br>
-              <span class="flag-cards-property">Capital:</span>
-              <span class="flag-cards-value">Berlin</span>
+              <h3 class="flag-cards-name">United States of America</h3>
+              <dl class="flag-cards-details">
+                <div class="flag-cards-details-item">
+                  <dt class="flag-cards-details-title">Population:</dt>
+                  <dd class="flag-cards-details-value">323,947,000</dd>
+                </div>
+                <div class="flag-cards-details-item">
+                  <dt class="flag-cards-details-title">Region:</dt>
+                  <dd class="flag-cards-details-value">Americas</dd>
+                </div>
+                <div class="flag-cards-details-item">
+                  <dt class="flag-cards-details-title">Capital:</dt>
+                  <dd class="flag-cards-details-value">Washington, D.C.</dd>
+                </div>
+              </dl>
             </div>
           </a>
         </li>
+
         <li class="flag-cards-item">
           <a href="detail.html" class="flag-cards-link">
-            <img class="flag-cards-img" src="./img/flag-brazil.jpg" alt="flag-brazil"  srcset="./img/flag-brazil.jpg 1x , ./img/flag-brazil@2x.jpg 2x" width="260" height="160">
+            <img class="flag-cards-img" src="./img/flag-brazil.jpg" alt="flag-brazil"  srcset="./img/flag-brazil.jpg 1x , ./img/flag-brazil@2x.jpg 2x" width="264" height="160">
             <div class="flag-cards-info">
-              <h4 class="flag-cards-title">Brazil</h4>
-              <span class="flag-cards-property">Population:</span>
-              <span class="flag-cards-value">81,770,900</span><br>
-              <span class="flag-cards-property">Region: </span>
-              <span class="flag-cards-value">Europe</span><br>
-              <span class="flag-cards-property">Capital:</span>
-              <span class="flag-cards-value">Berlin</span>
+              <h3 class="flag-cards-name">Brazil</h3>
+              <dl class="flag-cards-details">
+                <div class="flag-cards-details-item">
+                  <dt class="flag-cards-details-title">Population:</dt>
+                  <dd class="flag-cards-details-value">206,135,893</dd>
+                </div>
+                <div class="flag-cards-details-item">
+                  <dt class="flag-cards-details-title">Region:</dt>
+                  <dd class="flag-cards-details-value">Americas</dd>
+                </div>
+                <div class="flag-cards-details-item">
+                  <dt class="flag-cards-details-title">Capital:</dt>
+                  <dd class="flag-cards-details-value">Brasília</dd>
+                </div>
+              </dl>
             </div>
           </a>
         </li>
+
         <li class="flag-cards-item">
           <a href="detail.html" class="flag-cards-link">
             <img class="flag-cards-img" src="./img/flag-iceland.jpg" alt="flag-iceland.jpg"  srcset="./img/flag-iceland.jpg 1x , ./img/flag-iceland@2x.jpg 2x" width="260" height="160">
             <div class="flag-cards-info">
-              <h4 class="flag-cards-title">Iceland</h4>
-              <span class="flag-cards-property">Population:</span>
-              <span class="flag-cards-value">81,770,900</span><br>
-              <span class="flag-cards-property">Region: </span>
-              <span class="flag-cards-value">Europe</span><br>
-              <span class="flag-cards-property">Capital:</span>
-              <span class="flag-cards-value">Berlin</span>
+              <h3 class="flag-cards-name">Iceland</h3>
+              <dl class="flag-cards-details">
+                <div class="flag-cards-details-item">
+                  <dt class="flag-cards-details-title">Population:</dt>
+                  <dd class="flag-cards-details-value">334,300</dd>
+                </div>
+                <div class="flag-cards-details-item">
+                  <dt class="flag-cards-details-title">Region:</dt>
+                  <dd class="flag-cards-details-value">Europe</dd>
+                </div>
+                <div class="flag-cards-details-item">
+                  <dt class="flag-cards-details-title">Capital:</dt>
+                  <dd class="flag-cards-details-value">Reykjavík</dd>
+                </div>
+              </dl>
             </div>
           </a>
         </li>
+
         <li class="flag-cards-item">
           <a href="detail.html" class="flag-cards-link">
             <img class="flag-cards-img" src="./img/flag-afghanistan.jpg" alt="flag-afghanistan.jpg"  srcset="./img/flag-afghanistan.jpg 1x , ./img/flag-afghanistan@2x.jpg 2x" width="260" height="160">
             <div class="flag-cards-info">
-              <h4 class="flag-cards-title">Afghanistan</h4>
-              <span class="flag-cards-property">Population:</span>
-              <span class="flag-cards-value">81,770,900</span><br>
-              <span class="flag-cards-property">Region: </span>
-              <span class="flag-cards-value">Europe</span><br>
-              <span class="flag-cards-property">Capital:</span>
-              <span class="flag-cards-value">Berlin</span>
+              <h3 class="flag-cards-name">Afghanistan</h3>
+              <dl class="flag-cards-details">
+                <div class="flag-cards-details-item">
+                  <dt class="flag-cards-details-title">Population:</dt>
+                  <dd class="flag-cards-details-value">27,657,145</dd>
+                </div>
+                <div class="flag-cards-details-item">
+                  <dt class="flag-cards-details-title">Region:</dt>
+                  <dd class="flag-cards-details-value">Asia</dd>
+                </div>
+                <div class="flag-cards-details-item">
+                  <dt class="flag-cards-details-title">Capital:</dt>
+                  <dd class="flag-cards-details-value">Kabul</dd>
+                </div>
+              </dl>
             </div>
           </a>
         </li>
+
         <li class="flag-cards-item">
           <a href="detail.html" class="flag-cards-link">
             <img class="flag-cards-img" src="./img/flag-aland-islands.jpg" alt="flag-aland-islands.jpg"  srcset="./img/flag-aland-islands.jpg 1x , ./img/flag-aland-islands@2x.jpg 2x" width="260" height="160">
             <div class="flag-cards-info">
-              <h4 class="flag-cards-title">Åland Islands</h4>
-              <span class="flag-cards-property">Population:</span>
-              <span class="flag-cards-value">81,770,900</span><br>
-              <span class="flag-cards-property">Region: </span>
-              <span class="flag-cards-value">Europe</span><br>
-              <span class="flag-cards-property">Capital:</span>
-              <span class="flag-cards-value">Berlin</span>
+              <h3 class="flag-cards-name">Åland Islands</h3>
+              <dl class="flag-cards-details">
+                <div class="flag-cards-details-item">
+                  <dt class="flag-cards-details-title">Population:</dt>
+                  <dd class="flag-cards-details-value">28,875</dd>
+                </div>
+                <div class="flag-cards-details-item">
+                  <dt class="flag-cards-details-title">Region:</dt>
+                  <dd class="flag-cards-details-value">Europe</dd>
+                </div>
+                <div class="flag-cards-details-item">
+                  <dt class="flag-cards-details-title">Capital:</dt>
+                  <dd class="flag-cards-details-value">Mariehamn</dd>
+                </div>
+              </dl>
             </div>
           </a>
         </li>
+
         <li class="flag-cards-item">
           <a href="detail.html" class="flag-cards-link">
             <img class="flag-cards-img" src="./img/flag-albania.jpg" alt="flag-albania.jpg"  srcset="./img/flag-albania.jpg 1x , ./img/flag-albania@2x.jpg 2x" width="260" height="160">
             <div class="flag-cards-info">
-              <h4 class="flag-cards-title">Albania</h4>
-              <span class="flag-cards-property">Population:</span><br>
-              <span class="flag-cards-value">81,770,900</span>
-              <span class="flag-cards-property">Region: </span>
-              <span class="flag-cards-value">Europe</span><br>
-              <span class="flag-cards-property">Capital:</span>
-              <span class="flag-cards-value">Berlin</span>
+              <h3 class="flag-cards-name">Albania</h3>
+              <dl class="flag-cards-details">
+                <div class="flag-cards-details-item">
+                  <dt class="flag-cards-details-title">Population:</dt>
+                  <dd class="flag-cards-details-value">2,886,026</dd>
+                </div>
+                <div class="flag-cards-details-item">
+                  <dt class="flag-cards-details-title">Region:</dt>
+                  <dd class="flag-cards-details-value">Europe</dd>
+                </div>
+                <div class="flag-cards-details-item">
+                  <dt class="flag-cards-details-title">Capital:</dt>
+                  <dd class="flag-cards-details-value">Tirana</dd>
+                </div>
+              </dl>
             </div>
           </a>
         </li>
+
         <li class="flag-cards-item">
           <a href="detail.html" class="flag-cards-link">
             <img class="flag-cards-img" src="./img/flag-algeria.jpg" alt="flag-algeria.jpg"  srcset="./img/flag-algeria.jpg 1x , ./img/flag-algeria@2x.jpg 2x" width="260" height="160">
             <div class="flag-cards-info">
-              <h4 class="flag-cards-title">Algeria</h4>
-              <span class="flag-cards-property">Population:</span>
-              <span class="flag-cards-value">81,770,900</span><br>
-              <span class="flag-cards-property">Region: </span>
-              <span class="flag-cards-value">Europe</span><br>
-              <span class="flag-cards-property">Capital:</span>
-              <span class="flag-cards-value">Berlin</span>
+              <h3 class="flag-cards-name">Tirana</h3>
+              <dl class="flag-cards-details">
+                <div class="flag-cards-details-item">
+                  <dt class="flag-cards-details-title">Population:</dt>
+                  <dd class="flag-cards-details-value">40,400,000</dd>
+                </div>
+                <div class="flag-cards-details-item">
+                  <dt class="flag-cards-details-title">Region:</dt>
+                  <dd class="flag-cards-details-value">Africa</dd>
+                </div>
+                <div class="flag-cards-details-item">
+                  <dt class="flag-cards-details-title">Capital:</dt>
+                  <dd class="flag-cards-details-value">Algiers</dd>
+                </div>
+              </dl>
             </div>
           </a>
         </li>

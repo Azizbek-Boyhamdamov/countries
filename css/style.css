@@ -175,7 +175,6 @@ a{
   background-color: var(--cards-light-bg-color);
 }
 
-
 option[value=""][disabled] {
   display: none;
 }

@@ -267,6 +267,15 @@ option[value=""][disabled] {
   padding: 11px 32px;
   border-radius: 6px;
   background-color: var(--cards-light-bg-color);
+  transition: opacity var(--transition-duration) ease;
+}
+
+.country-page-back-link:hover{
+  opacity: 0.8;
+}
+
+.country-page-back-link:active{
+  opacity: 0.6;
 }
 
 .country-page-back-icon {
